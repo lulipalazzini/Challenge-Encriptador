@@ -1,0 +1,159 @@
+:root {
+  --dark-blue-100: #609ed4;
+  --dark-blue-200: #356ea9;
+  --dark-blue-300: #0a3871;
+  --dark-blue-400: #072b61;
+  --dark-blue-500: #052051;
+  --light-blue-100: #f3f5fc;
+  --light-blue-200: #eff1fa;
+  --light-blue-300: #e9ecf8;
+  --light-blue-400: #aab2d5;
+  --light-blue-500: #757fb2;
+  --gray-100: #ced4da;
+  --gray-200: #adb5bd;
+  --gray-300: #868e96;
+  --gray-400: #495057;
+  --gray-500: #343a40;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: var(--light-blue-100);
+  font-family: "Inter", sans;
+  font-weight: 400;
+}
+
+.contenedorApp {
+  display: flex;
+  align-items: center;
+  margin-left: 12.5em;
+  gap: 5em;
+}
+
+#logoAlura {
+  margin: 2.5em auto auto 2.5em;
+}
+
+#ingresarTexto {
+  width: 20em;
+  height: 23em;
+  font-size: 2em;
+  border: none;
+  background-color: #f4f4fc;
+  cursor: pointer;
+  font-weight: 400;
+  font-family: "Inter", sans-serif;
+  color: var(--dark-blue-400);
+}
+
+#ingresarTexto::placeholder {
+  color: var(--dark-blue-400);
+}
+
+.informacion {
+  display: flex;
+  align-items: baseline;
+  gap: 0.5em;
+  width: 14.3em;
+  color: var(--gray-400);
+}
+
+.informacionTexto {
+  font-size: 0.75em;
+}
+
+.botones {
+  display: flex;
+  align-items: baseline;
+  gap: 0.5em;
+  color: var(--gray-400);
+  margin: 1em 0 0 0;
+}
+
+.boton {
+  border-radius: 1.5em;
+  border-width: 1px;
+  padding: 1.5em;
+  width: 20.5em;
+  height: 4.2em;
+}
+
+#encriptar {
+  background-color: var(--dark-blue-300);
+  color: #ffffff;
+}
+
+#desencriptar {
+  background-color: #d8dfe8;
+  color: var(--dark-blue-300);
+  border-color: var(--dark-blue-300);
+}
+
+#textoEncriptado {
+  width: 25em;
+  height: 59em;
+  margin: -3em 1.5em 3em 0;
+  background-color: #ffffff;
+  border-radius: 1.5em;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  box-shadow: 0 24px 32px -8px rgba(0, 0, 0, 0.08);
+}
+
+#textoGrande {
+  font-size: 1.5em;
+  padding-top: 2em;
+  font-weight: 700;
+  color: var(--gray-500);
+}
+
+#textoChico {
+  font-size: 1em;
+  padding-top: 1em;
+  color: var(--gray-400);
+}
+
+.margenEnc {
+  margin: 0 2em;
+  text-align: center;
+}
+
+/* VERSION TABLET */
+@media (max-width: 768px) {
+  .contenedorApp {
+    display: block;
+  }
+
+  #logoAlura {
+    margin: 5em 0 0 0;
+  }
+
+  #ingresarTexto {
+    width: 80%;
+    height: 18em;
+    margin: 4em 0 0 -4.9em;
+    font-size: 2em;
+  }
+
+  .informacion {
+    margin: 0 0 0 -10em;
+  }
+
+  .botones {
+    margin: 1em 0 0 -10em;
+  }
+}
+
+/* VERSION MOBILE */
+@media (max-width: 375px) {
+  body {
+    background-color: red;
+  }
+}
