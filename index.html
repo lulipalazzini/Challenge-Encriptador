@@ -40,8 +40,22 @@
             <p class="informacionTexto">Solo letras minusculas y sin acentos</p>
           </span>
           <span class="botones">
-            <button class="boton" id="encriptar">Encriptar</button>
-            <button class="boton" id="desencriptar">Desencriptar</button>
+            <button
+              class="boton"
+              id="encriptar"
+              value="encriptar"
+              onclick="encriptar()"
+            >
+              Encriptar
+            </button>
+            <button
+              class="boton"
+              id="desencriptar"
+              value="desencriptar"
+              onclick="desencriptar()"
+            >
+              Desencriptar
+            </button>
           </span>
         </div>
       </div>
@@ -55,7 +69,12 @@
         <p id="textoChico" class="margenEnc">
           Ingresa el texto que desees encriptar o desencriptar
         </p>
+        <div id="mostrarTexto" class="ocultar"></div>
+        <button onclick="copiarTexto()" id="botonCopiar" class="ocultar">
+          Copiar Texto
+        </button>
       </div>
     </div>
+    <script src="./index.js"></script>
   </body>
 </html>
