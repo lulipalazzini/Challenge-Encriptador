@@ -4,11 +4,13 @@ let textoEncriptado = document.getElementById("textoEncriptado");
 function ocultar() {
   let textoEnc1 = document.getElementById("textoGrande");
   let textoEnc2 = document.getElementById("textoChico");
+  let fotoEnc = document.getElementById("imgEncriptador");
   let mostrarTexto = document.getElementById("mostrarTexto");
   let botonCopiar = document.getElementById("botonCopiar");
 
   textoEnc1.classList.add("ocultar");
   textoEnc2.classList.add("ocultar");
+  fotoEnc.classList.add("ocultar");
   mostrarTexto.classList.remove("ocultar");
   botonCopiar.classList.remove("ocultar");
 }
