@@ -41,7 +41,7 @@ body {
 
 #ingresarTexto {
   width: 20em;
-  height: 23em;
+  height: 70vh;
   font-size: 2em;
   border: none;
   background-color: #f4f4fc;
@@ -96,7 +96,7 @@ body {
 
 #textoEncriptado {
   width: 25em;
-  height: 59em;
+  height: 70vh;
   margin: -3em 1.5em 3em 0;
   background-color: #ffffff;
   border-radius: 1.5em;
